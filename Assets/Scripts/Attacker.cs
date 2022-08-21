@@ -20,7 +20,6 @@ public class Attacker : MonoBehaviour {
 		if(!currentTarget){
 			animator.SetBool("isAttacking", false);
 		}
-		print(Button.selectedDefender);
 	}
 	
 	public void SetSpeed(float speed){
