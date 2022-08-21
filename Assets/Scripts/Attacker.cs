@@ -19,12 +19,8 @@ public class Attacker : MonoBehaviour {
 		
 		if(!currentTarget){
 			animator.SetBool("isAttacking", false);
-		
 		}
-	}
-	
-	void OnTriggerEnter2D(){
-		Debug.Log(name + " trigger enter");
+		print(Button.selectedDefender);
 	}
 	
 	public void SetSpeed(float speed){
@@ -38,7 +34,6 @@ public class Attacker : MonoBehaviour {
 				health.GetDamage(damage);
 			}
 		}
-		
 	}
 	
 	public void Attack(GameObject obj){
