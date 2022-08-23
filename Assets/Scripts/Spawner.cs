@@ -25,11 +25,8 @@ public class Spawner : MonoBehaviour {
 		}
 		
 		float treshold = spawnPerSecond * Time.deltaTime / 5;
-		if(Random.value < treshold){
-			return true;
-		}else{
-			return false;
-		}		
+		
+		return(Random.value < treshold);	
 	}
 	
 	public void Spawn(GameObject myGameObject){
