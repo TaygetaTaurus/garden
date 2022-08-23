@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 0}
-  levelSeconds: 3
+  levelSeconds: 30
 --- !u!222 &22276496
 CanvasRenderer:
   m_ObjectHideFlags: 1
