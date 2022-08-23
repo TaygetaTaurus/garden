@@ -3,5 +3,15 @@ using System.Collections;
 
 public class Defender : MonoBehaviour {
 
-	// используется в качестве ярылка
+	public int starCost = 100;
+
+	private StarDisplay starDisplay;
+
+	void Start(){
+		starDisplay = GameObject.FindObjectOfType<StarDisplay>();
+	}
+	
+	public void AddStar(int amount){
+		starDisplay.AddStars(amount);
+	}
 }
