@@ -47,7 +47,7 @@ GameObject:
   - 212: {fileID: 21244280}
   m_Layer: 0
   m_Name: Gnome
-  m_TagString: Untagged
+  m_TagString: destroyOnWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57362f86439eeaf4bbe136fb561b0531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 100
 --- !u!114 &11433486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb8ab64c3978214597561c324b53b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 10
+  starCost: 40
 --- !u!212 &21244280
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11424988}
   m_Layer: 0
   m_Name: Grave Stone
-  m_TagString: Untagged
+  m_TagString: destroyOnWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57362f86439eeaf4bbe136fb561b0531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
 --- !u!114 &11473576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb8ab64c3978214597561c324b53b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starCost: 10
+  starCost: 30
 --- !u!114 &11492730
 MonoBehaviour:
   m_ObjectHideFlags: 1

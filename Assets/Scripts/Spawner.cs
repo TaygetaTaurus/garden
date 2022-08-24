@@ -2,9 +2,23 @@
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
-
+	public float treshold;
 	public GameObject[] attackerPrefabArray;
+	
+	private float difficultyScaling;
 
+	void Start(){
+		difficultyScaling *= PlayerPrefsManager.GetDifficulty();
+		
+		if (PlayerPrefsManager.GetDifficulty() == 1){
+			difficultyScaling = 4500000f;
+		}else if(PlayerPrefsManager.GetDifficulty() == 2){
+			difficultyScaling = 300000f;
+		}else{
+			difficultyScaling = 150000f;
+		}
+	}
+	
 	// Update is called once per frame
 	void Update () {
 		foreach(GameObject thisAttacker in attackerPrefabArray){
@@ -14,18 +28,18 @@ public class Spawner : MonoBehaviour {
 		}
 	}
 	
+	
 	bool isTimeToSpawn(GameObject attackerGameObject){
 		Attacker attacker = attackerGameObject.GetComponent<Attacker>();
-		
 		float meanSpawnDelay = attacker.seenEverySeconds;
 		float spawnPerSecond = 1/meanSpawnDelay;
+		
 		
 		if (Time.deltaTime > meanSpawnDelay){
 			Debug.LogWarning("Spawn rate capped by frame rate");
 		}
 		
-		float treshold = spawnPerSecond * Time.deltaTime / 5;
-		
+		treshold = (spawnPerSecond * Time.deltaTime / 5) + Time.timeSinceLevelLoad / difficultyScaling;
 		return(Random.value < treshold);	
 	}
 	

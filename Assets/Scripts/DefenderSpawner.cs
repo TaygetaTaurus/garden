@@ -3,14 +3,14 @@ using System.Collections;
 
 public class DefenderSpawner : MonoBehaviour {
 
-	public Camera myCamera;
-	
+	private	Camera myCamera;
 	private StarDisplay starDisplay;
 	private GameObject defenderParent;
 
 	void Start(){
 		starDisplay = GameObject.FindObjectOfType<StarDisplay>();
 		defenderParent = GameObject.Find("Defenders");
+		myCamera = GameObject.FindObjectOfType<Camera>();
 		
 		if(!defenderParent){
 			defenderParent = new GameObject("Defenders");

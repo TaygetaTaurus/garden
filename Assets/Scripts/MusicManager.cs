@@ -14,11 +14,11 @@ public class MusicManager : MonoBehaviour {
 	
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
+		audioSource.volume = PlayerPrefsManager.GetMasterVolume(); 
 	}
 	
 	void OnLevelWasLoaded (int level) {
 		AudioClip thisLevelMusic = levelMusicChangeArray[level];
-		Debug.Log ("Playing clip: " + thisLevelMusic);
 		
 		if (thisLevelMusic) { // If there's some music attached
 			audioSource.clip = thisLevelMusic;

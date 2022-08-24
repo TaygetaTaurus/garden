@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(Text))]
 public class StarDisplay : MonoBehaviour {
 
-	private int starsAmount = 100;
+	private float starsAmount = 70f;
 	private Text text;
 	
 	public enum Status {SUCCESS, FAILURE};
@@ -13,6 +13,7 @@ public class StarDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		text = GetComponent<Text>();
+		starsAmount -= PlayerPrefsManager.GetDifficulty() * 10f;
 		UpdateDisplay();
 	}
 
