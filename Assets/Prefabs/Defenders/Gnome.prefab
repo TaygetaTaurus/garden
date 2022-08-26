@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 145742, guid: c282b487b53ce3042a60226832ea02bf, type: 2}
   gun: {fileID: 139900}
+  fireSound: {fileID: 8300000, guid: 21a338115a05078419604dd0688c90de, type: 3}
 --- !u!114 &11424988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  deathSound: {fileID: 8300000, guid: 80ca9ad6278a0b64d91e569ad0cb6950, type: 3}
 --- !u!114 &11433486
 MonoBehaviour:
   m_ObjectHideFlags: 1

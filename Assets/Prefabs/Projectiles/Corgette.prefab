@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   damage: 40
+  spawnSound: {fileID: 0}
 --- !u!212 &21251806
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  deathSound: {fileID: 8300000, guid: 2302589898f0abc4ba75b7b4f1074a8b, type: 3}
 --- !u!114 &11473576
 MonoBehaviour:
   m_ObjectHideFlags: 1

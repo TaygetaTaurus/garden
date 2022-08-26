@@ -651,10 +651,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 8300000, guid: d45c99c5fd66f8d40b60a115739f243d, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: c57391f58de44604fac46280be6d14a2, type: 3}
   - {fileID: 8300000, guid: ff4656d9e93a4c7489d477339df058d3, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: a1fdde96132ef454eb75ae7270bd9af0, type: 3}
+  - {fileID: 8300000, guid: 664036a1bd415814080384a1266a82e2, type: 3}
   - {fileID: 0}
 --- !u!4 &1708911212
 Transform:

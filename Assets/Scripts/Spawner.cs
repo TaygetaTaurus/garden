@@ -45,8 +45,12 @@ public class Spawner : MonoBehaviour {
 	
 	public void Spawn(GameObject myGameObject){
 		GameObject myAttacker = Instantiate(myGameObject) as GameObject;
+		Vector3 spawnPosition = transform.position;
 		myAttacker.transform.parent = transform;
-		myAttacker.transform.position = transform.position;
+		if (myGameObject.GetComponent<Lizard>()){
+			spawnPosition += new Vector3(-2.25f, 0f , 0f);
+		}
+		myAttacker.transform.position =  spawnPosition;
 		
 		/* //мой способ, тоже рабочий
 		GameObject myAttacker;

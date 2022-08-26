@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11430156}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: destroyOnWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e255dd4b234ece438b2c48053853bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treshold: 0
   attackerPrefabArray:
   - {fileID: 139280, guid: 8031f13bd31eb4d89b9e6eea9a3c0417, type: 2}
   - {fileID: 100450, guid: 2c70665c11266425294518fa7677cf8e, type: 2}

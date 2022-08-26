@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 80
+  deathSound: {fileID: 8300000, guid: 2dbd3f83802f5a8409acc1b77482abd5, type: 3}
 --- !u!114 &11454602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d60a39612f98384181d53eac1641a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seenEverySeconds: 10
+  seenEverySeconds: 20
 --- !u!114 &11467766
 MonoBehaviour:
   m_ObjectHideFlags: 1

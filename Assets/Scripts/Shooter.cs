@@ -5,6 +5,7 @@ public class Shooter : MonoBehaviour {
 
 	public GameObject projectile;
 	public GameObject gun;
+	public AudioClip fireSound;
 	
 	private Spawner myLaneSpawner;
 	private Animator animator;
@@ -64,6 +65,8 @@ public class Shooter : MonoBehaviour {
 		
 		newProjectile.transform.parent = projectileParent.transform;
 		newProjectile.transform.position = gun.transform.position;
+		
+		AudioSource.PlayClipAtPoint(fireSound, transform.position, PlayerPrefsManager.GetMasterVolume());
 	}
 	
 }
